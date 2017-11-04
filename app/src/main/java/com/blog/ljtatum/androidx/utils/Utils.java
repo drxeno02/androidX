@@ -10,10 +10,7 @@ import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 
 import com.app.framework.utilities.FrameworkUtils;
-import com.blog.ljtatum.tipcalculator.BuildConfig;
-import com.blog.ljtatum.tipcalculator.R;
-import com.blog.ljtatum.tipcalculator.constants.Constants;
-import com.blog.ljtatum.tipcalculator.logger.Logger;
+
 
 /**
  * Created by LJTat on 9/13/2017.
