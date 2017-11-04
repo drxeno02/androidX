@@ -15,9 +15,9 @@ import android.widget.TextView;
 import com.app.framework.enums.Enum;
 import com.app.framework.utilities.FrameworkUtils;
 import com.app.framework.utilities.ShareUtils;
-import com.blog.ljtatum.tipcalculator.BuildConfig;
-import com.blog.ljtatum.tipcalculator.R;
-import com.blog.ljtatum.tipcalculator.activity.MainActivity;
+import com.blog.ljtatum.androidx.BuildConfig;
+import com.blog.ljtatum.androidx.R;
+import com.blog.ljtatum.androidx.activity.MainActivity;
 
 import java.util.Calendar;
 
@@ -49,13 +49,13 @@ public class AboutFragment extends BaseFragment implements View.OnClickListener 
      */
     private void initializeViews() {
         mContext = getActivity();
-        tvAppVersion = (TextView) mRootView.findViewById(R.id.tv_app_version);
-        tvCopyright = (TextView) mRootView.findViewById(R.id.tv_copyright);
-        tvFragmentHeader = (TextView) mRootView.findViewById(R.id.tv_fragment_header);
-        tvFeedbackEmail = (TextView) mRootView.findViewById(R.id.tv_feedback_email);
-        ivFb = (ImageView) mRootView.findViewById(R.id.iv_fb);
-        ivTwitter = (ImageView) mRootView.findViewById(R.id.iv_twitter);
-        ivLinkedin = (ImageView) mRootView.findViewById(R.id.iv_linkedin);
+        tvAppVersion = mRootView.findViewById(R.id.tv_app_version);
+        tvCopyright = mRootView.findViewById(R.id.tv_copyright);
+        tvFragmentHeader = mRootView.findViewById(R.id.tv_fragment_header);
+        tvFeedbackEmail = mRootView.findViewById(R.id.tv_feedback_email);
+        ivFb = mRootView.findViewById(R.id.iv_fb);
+        ivTwitter = mRootView.findViewById(R.id.iv_twitter);
+        ivLinkedin = mRootView.findViewById(R.id.iv_linkedin);
 
         // set fragment header
         tvFragmentHeader.setText(getResources().getString(R.string.about));
