@@ -14,7 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.app.framework.utilities.FrameworkUtils;
-import com.blog.ljtatum.tipcalculator.R;
+import com.blog.ljtatum.androidx.R;
 
 
 /**
