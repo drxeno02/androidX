@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.app.framework.utilities.FrameworkUtils;
-import com.blog.ljtatum.tipcalculator.R;
-import com.blog.ljtatum.tipcalculator.activity.MainActivity;
+import com.blog.ljtatum.androidx.R;
+import com.blog.ljtatum.androidx.activity.MainActivity;
 
 /**
  * Created by LJTat on 2/27/2017.
@@ -38,7 +38,7 @@ public class PrivacyFragment extends BaseFragment implements View.OnClickListene
      */
     private void initializeViews() {
         mContext = getActivity();
-        tvFragmentHeader = (TextView) mRootView.findViewById(R.id.tv_fragment_header);
+        tvFragmentHeader = mRootView.findViewById(R.id.tv_fragment_header);
 
         // set fragment header
         tvFragmentHeader.setText(getResources().getString(R.string.privacy));
