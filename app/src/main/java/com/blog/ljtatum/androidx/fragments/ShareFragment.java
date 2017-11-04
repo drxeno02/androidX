@@ -12,8 +12,9 @@ import android.widget.TextView;
 import com.app.framework.enums.Enum;
 import com.app.framework.utilities.FrameworkUtils;
 import com.app.framework.utilities.ShareUtils;
-import com.blog.ljtatum.tipcalculator.R;
-import com.blog.ljtatum.tipcalculator.activity.MainActivity;
+import com.blog.ljtatum.androidx.R;
+import com.blog.ljtatum.androidx.activity.MainActivity;
+
 
 /**
  * Created by LJTat on 2/27/2017.
@@ -43,10 +44,10 @@ public class ShareFragment extends BaseFragment implements View.OnClickListener 
      */
     private void initializeViews() {
         mContext = getActivity();
-        tvFragmentHeader = (TextView) mRootView.findViewById(R.id.tv_fragment_header);
-        ivFb = (ImageView) mRootView.findViewById(R.id.iv_fb);
-        ivTwitter = (ImageView) mRootView.findViewById(R.id.iv_twitter);
-        ivLinkedin = (ImageView) mRootView.findViewById(R.id.iv_linkedin);
+        tvFragmentHeader = mRootView.findViewById(R.id.tv_fragment_header);
+        ivFb = mRootView.findViewById(R.id.iv_fb);
+        ivTwitter = mRootView.findViewById(R.id.iv_twitter);
+        ivLinkedin = mRootView.findViewById(R.id.iv_linkedin);
 
         // set fragment header
         tvFragmentHeader.setText(getResources().getString(R.string.share));
