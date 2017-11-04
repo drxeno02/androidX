@@ -9,14 +9,16 @@
     android:background="@drawable/iphone_bg"
     tools:context="com.blog.ljtatum.androidx.activity.MainActivity">
 
+    <!-- hamburger menu -->
     <ImageView
         android:id="@+id/iv_hamburger_menu"
-        android:layout_width="@dimen/scaling_60"
-        android:layout_height="@dimen/scaling_60"
+        android:layout_width="@dimen/scaling_45"
+        android:layout_height="@dimen/scaling_45"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="@dimen/scaling_10"
         android:layout_marginRight="@dimen/scaling_10"
+        android:layout_marginTop="@dimen/scaling_10"
         android:scaleType="fitXY"
         android:src="@drawable/hamburger_icon" />
 

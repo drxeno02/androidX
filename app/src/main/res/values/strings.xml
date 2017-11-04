@@ -32,4 +32,13 @@
     <!-- settings -->
     <string name="customize_preferences">Customize Your Preferences</string>
 
+	<!-- network -->
+	<string name="check_network">Sorry for the delay. We\'re having trouble connecting.</string>
+
+	<!-- dialog options -->
+	<string name="retry">Retry</string>
+	<string name="ok">OK</string>
+	<string name="okay">Okay</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
 </resources>
