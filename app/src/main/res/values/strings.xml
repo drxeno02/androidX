@@ -1,13 +1,19 @@
 <resources>
     <string name="app_name">AndroidX</string>
 
-	<!-- menu headers -->
-	<string name="share">Share</string>
-	<string name="about">About</string>
-	<string name="privacy">Privacy</string>
-	<string name="guide">Guide</string>
-	<string name="history">History</string>
-	<string name="setting">Settings</string>
+    <!-- application labels -->
+    <string name="main_desc">Why pay $999+ for the iPhoneX when you can get the same look for FREE!
+		Behold, AndroidX. Enable your iPhoneX look today</string>
+    <string name="enable_androidx">Enable AndroidX</string>
+    <string name="disable_androidx">Disable AndroidX</string>
+    <string name="enable_androidx_feature_info">Enabling this feature will add the iPhoneX Notch to
+		your phone. Saves you from paying big bucks for an iPhoneX!</string>
+
+    <!-- menu headers -->
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="privacy">Privacy</string>
+    <string name="setting">Settings</string>
 
     <!-- about -->
     <string name="follow_me">Follow Me:</string>
@@ -31,14 +37,22 @@
 
     <!-- settings -->
     <string name="customize_preferences">Customize Your Preferences</string>
+    <string name="settings_power_saving">Power Saving: %s</string>
+    <string name="settings_draw_over_app">Draw Over App\nPermission: %s</string>
+    <string name="settings_power_saving_info">Enabling this feature will run the Service while
+		the app is open. This will conserve your overall battery life</string>
+    <string name="settings_draw_over_app_info">Enabling this feature allows the aesthetic to
+		work! Keep this enabled at all times</string>
+    <string name="settings_enabled">Enabled</string>
+    <string name="settings_disabled">Disabled</string>
 
-	<!-- network -->
-	<string name="check_network">Sorry for the delay. We\'re having trouble connecting.</string>
+    <!-- network -->
+    <string name="check_network">Sorry for the delay. We\'re having trouble connecting.</string>
 
-	<!-- dialog options -->
-	<string name="retry">Retry</string>
-	<string name="ok">OK</string>
-	<string name="okay">Okay</string>
-	<string name="yes">Yes</string>
-	<string name="no">No</string>
+    <!-- dialog options -->
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="okay">Okay</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

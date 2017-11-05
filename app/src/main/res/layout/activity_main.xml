@@ -1,13 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/frag_container"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/iphone_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     tools:context="com.blog.ljtatum.androidx.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- content description -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaling_220"
+            android:layout_margin="@dimen/scaling_26"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:contentPadding="@dimen/scaling_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- iphonex icon -->
+                <ImageView
+                    android:id="@+id/iv_iphonex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iphonex"
+                    tools:ignore="ContentDescription" />
+
+                <!-- content description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/scaling_10"
+                    android:layout_marginStart="@dimen/scaling_10"
+                    android:layout_toEndOf="@+id/iv_iphonex"
+                    android:layout_toRightOf="@+id/iv_iphonex"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/scaling_4"
+                    android:text="@string/main_desc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_wrapper"
+        android:gravity="center">
+
+        <!-- enable AndroidX (iphoneX aesthetic) -->
+        <TextView
+            android:id="@+id/tv_enable_androidx"
+            android:layout_width="@dimen/scaling_280"
+            android:layout_height="@dimen/scaling_60"
+            android:layout_marginLeft="@dimen/scaling_30"
+            android:layout_marginStart="@dimen/scaling_30"
+            android:background="@drawable/bg_blue_rad50"
+            android:gravity="center"
+            android:text="@string/enable_androidx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_24" />
+
+        <!-- enable AndroidX info -->
+        <ImageView
+            android:id="@+id/iv_enable_androidx_info"
+            android:layout_width="@dimen/scaling_40"
+            android:layout_height="@dimen/scaling_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tv_enable_androidx"
+            android:layout_toRightOf="@+id/tv_enable_androidx"
+            android:src="@drawable/question_mark_a"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
 
     <!-- hamburger menu -->
     <ImageView
@@ -18,10 +101,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginEnd="@dimen/scaling_10"
         android:layout_marginRight="@dimen/scaling_10"
-        android:layout_marginTop="@dimen/scaling_10"
+        android:layout_marginTop="@dimen/scaling_20"
         android:scaleType="fitXY"
-        android:src="@drawable/hamburger_icon" />
-
+        android:src="@drawable/hamburger_icon"
+        tools:ignore="ContentDescription" />
 
     <!-- ad banner -->
     <com.google.android.gms.ads.AdView

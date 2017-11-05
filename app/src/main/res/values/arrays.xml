@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- drawer menu options -->
+    <string-array name="array_menu_options">
+        <item>@string/setting</item>
+        <item>@string/share</item>
+        <item>@string/about</item>
+        <item>@string/privacy</item>
+    </string-array>
+
+</resources>

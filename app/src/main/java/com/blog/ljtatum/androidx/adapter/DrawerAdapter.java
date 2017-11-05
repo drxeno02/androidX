@@ -6,11 +6,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.app.framework.utilities.FrameworkUtils;
 import com.blog.ljtatum.androidx.R;
-
-import java.util.ArrayList;
+import com.blog.ljtatum.androidx.activity.BaseActivity;
+import com.blog.ljtatum.androidx.fragments.AboutFragment;
+import com.blog.ljtatum.androidx.fragments.PrivacyFragment;
+import com.blog.ljtatum.androidx.fragments.SettingsFragment;
+import com.blog.ljtatum.androidx.fragments.ShareFragment;
 
 /**
  * Created by leonard on 3/16/2017.
@@ -23,18 +28,21 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
     private static final String SHARE = "Share";
     private static final String ABOUT = "About";
     private static final String PRIVACY = "Privacy";
-    private final ArrayList<String> alDrawerMenuOptions;
+
     private final Context mContext;
+    private String[] arryMenuOptions;
+    private int[] arryMenuIcons;
 
     /**
      * Default constructor
      *
-     * @param context       Interface to global information about an application environment
-     * @param alMenuOptions List of menu options for drawer
+     * @param context         Interface to global information about an application environment
+     * @param arryMenuOptions List of menu options for drawer
      */
-    public DrawerAdapter(Context context, ArrayList<String> alMenuOptions) {
+    public DrawerAdapter(Context context, String[] arryMenuOptions, int[] arryMenuIcons) {
         mContext = context;
-        alDrawerMenuOptions = alMenuOptions;
+        this.arryMenuOptions = arryMenuOptions;
+        this.arryMenuIcons = arryMenuIcons;
     }
 
     @NonNull
@@ -46,15 +54,16 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvMenuOption.setText(alDrawerMenuOptions.get(position));
+        holder.tvMenuOption.setText(arryMenuOptions[position]);
+        holder.ivMenuIcon.setImageDrawable(FrameworkUtils.getDrawable(mContext, arryMenuIcons[position]));
 
         // process menu options
-        switch (alDrawerMenuOptions.get(position)) {
+        switch (arryMenuOptions[position]) {
             case SETTINGS:
                 holder.tvMenuOption.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        ((BaseActivity) mContext).addFragment(new SettingsFragment());
                     }
                 });
                 break;
@@ -62,7 +71,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
                 holder.tvMenuOption.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        ((BaseActivity) mContext).addFragment(new ShareFragment());
                     }
                 });
                 break;
@@ -70,7 +79,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
                 holder.tvMenuOption.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        ((BaseActivity) mContext).addFragment(new AboutFragment());
                     }
                 });
                 break;
@@ -78,7 +87,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
                 holder.tvMenuOption.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        ((BaseActivity) mContext).addFragment(new PrivacyFragment());
                     }
                 });
                 break;
@@ -89,7 +98,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return alDrawerMenuOptions.size();
+        return arryMenuOptions.length;
     }
 
     /**
@@ -100,11 +109,13 @@ public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder
 
         @NonNull
         final TextView tvMenuOption;
+        final ImageView ivMenuIcon;
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             // initialize views
             tvMenuOption = itemView.findViewById(R.id.tv_menu_option);
+            ivMenuIcon = itemView.findViewById(R.id.iv_menu_icon);
         }
     }
 }

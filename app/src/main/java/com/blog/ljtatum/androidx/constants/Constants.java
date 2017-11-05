@@ -13,4 +13,9 @@ public class Constants {
 
     // verbose mode; true to see verbosity mode otherwise false
     public static final boolean DEBUG_VERBOSE = true;
+
+    // bundle keys
+    public static final String KEY_POWER_SAVING = "powerSaving";
+    public static final String KEY_DRAW_OVER_APP = "drawOverApp";
+    public static final String KEY_ANDROIDX_MODE = "androidXMode";
 }

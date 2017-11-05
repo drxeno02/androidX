@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/scaling_280"
+    android:layout_width="@dimen/scaling_220"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:clickable="true"
     android:orientation="vertical">
 
-    <!-- tesla logo -->
+    <!-- logo -->
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/scaling_135"
+        android:layout_height="@dimen/scaling_135"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/scaling_100"
+        android:layout_marginTop="@dimen/scaling_60"
         android:scaleType="fitXY"
-        android:src="@drawable/iphone_icon"/>
+        android:src="@drawable/iphone_icon" />
 
     <!-- profile options parent wrapper -->
     <LinearLayout
         android:id="@+id/ll_profile_options"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
         android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/scaling_30"
         android:orientation="vertical">
 
         <!-- list for menu options -->
@@ -35,7 +36,7 @@
             android:layout_marginTop="@dimen/scaling_10"
             android:divider="@null"
             android:overScrollMode="never"
-            android:scrollingCache="false"/>
+            android:scrollingCache="false" />
 
     </LinearLayout>
 
