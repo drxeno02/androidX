@@ -82,9 +82,9 @@ public class AppRaterUtil {
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        TextView tvRateApp = (TextView) v.findViewById(R.id.tv_rate_app);
-        TextView tvRemindLater = (TextView) v.findViewById(R.id.tv_remind_later);
-        TextView tvNoThanks = (TextView) v.findViewById(R.id.tv_no_thanks);
+        TextView tvRateApp = v.findViewById(R.id.tv_rate_app);
+        TextView tvRemindLater = v.findViewById(R.id.tv_remind_later);
+        TextView tvNoThanks = v.findViewById(R.id.tv_no_thanks);
 
         // set listeners
         tvRateApp.setOnClickListener(new OnClickListener() {
