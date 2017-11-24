@@ -128,12 +128,13 @@ public class SettingsFragment extends BaseFragment implements View.OnClickListen
                         // update draw over app settings
                         mSharedPref.setPref(Constants.KEY_DRAW_OVER_APP, false);
                         tvDrawOverApp.setText(getActivity().getResources().getString(R.string.settings_draw_over_app, "Disabled"));
+                        // show banner
+                        Crouton.showText(getActivity(), "Sorry, this device does not support this feature", Style.ALERT);
                     }
                 } else {
                     // update draw over app settings
-                    Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                            Uri.parse(PACKAGE.concat(mContext.getPackageName())));
-                    startActivityForResult(intent, PERMISSION_REQUEST_CODE_DRAW_OVER_APP);
+                    mSharedPref.setPref(Constants.KEY_DRAW_OVER_APP, false);
+                    tvDrawOverApp.setText(getActivity().getResources().getString(R.string.settings_draw_over_app, "Disabled"));
                 }
             }
         });

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
+import com.app.framework.utilities.FrameworkUtils;
 import com.blog.ljtatum.androidx.R;
 
 /**
@@ -20,15 +21,19 @@ public class iPhoneNotch extends View {
     private final Context mContext;
     private FrameLayout mFrameLayout;
     private WindowManager mWindowManager;
+    private LayoutInflater mRootView;
 
     public iPhoneNotch(Context context) {
         super(context);
-
+        // instantiate context and views
         mContext = context;
         mFrameLayout = new FrameLayout(mContext);
 
-        // create notch and add to window manager
-        addNotchToWindowManager();
+        // add notch if not added
+        if (FrameworkUtils.checkIfNull(mRootView)) {
+            // create notch and add to window manager
+            addNotchToWindowManager();
+        }
     }
 
     /**
@@ -70,16 +75,18 @@ public class iPhoneNotch extends View {
         // adding views to window manager will display (draw) the view over any thing
         mWindowManager.addView(mFrameLayout, params);
 
-        LayoutInflater rootView = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mRootView = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         // inflate a new view hierarchy from the specified xml resource
-        rootView.inflate(R.layout.item_iphone_notch, mFrameLayout);
+        mRootView.inflate(R.layout.item_iphone_notch, mFrameLayout);
     }
 
     /**
      * Method is used to remove window manager view
      */
     public void destroy() {
-        mWindowManager.removeView(mFrameLayout);
-        mFrameLayout = null;
+        if (!FrameworkUtils.checkIfNull(mFrameLayout)) {
+            mWindowManager.removeView(mFrameLayout);
+            mFrameLayout = null;
+        }
     }
 }

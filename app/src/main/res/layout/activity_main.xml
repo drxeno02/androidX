@@ -115,6 +115,6 @@
         android:layout_gravity="center_horizontal"
         android:orientation="vertical"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-8397256122648968/7826518012" />
+        ads:adUnitId="ca-app-pub-8397256122648968/8223227383" />
 
 </RelativeLayout>

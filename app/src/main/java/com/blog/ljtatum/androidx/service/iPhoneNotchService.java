@@ -15,6 +15,13 @@ import com.blog.ljtatum.androidx.gui.iPhoneNotch;
 public class iPhoneNotchService extends Service {
 
     private iPhoneNotch mPhoneNotchView;
+    private static boolean isRunning;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        isRunning = false;
+    }
 
     @Nullable
     @Override
@@ -24,24 +31,27 @@ public class iPhoneNotchService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        // initialize iphone notch view
-        mPhoneNotchView = new iPhoneNotch(this);
-
-        // start service
-        return START_STICKY;
+        if (!isRunning) {
+            // set flag to true
+            isRunning = true;
+            // initialize iphone notch view
+            mPhoneNotchView = new iPhoneNotch(this);
+            // start service
+            return START_STICKY;
+        }
+        return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
     public void onDestroy() {
-        if (!FrameworkUtils.checkIfNull(mPhoneNotchView)) {
+        if (!FrameworkUtils.checkIfNull(mPhoneNotchView) && isRunning) {
+            isRunning = false;
             mPhoneNotchView.destroy();
             mPhoneNotchView = null;
-
             // invoke garbage collector
             System.gc();
         }
         stopForeground(true);
         stopSelf();
     }
-
 }

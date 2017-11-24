@@ -32,6 +32,7 @@ import com.blog.ljtatum.androidx.constants.Durations;
 import com.blog.ljtatum.androidx.gui.iPhoneNotch;
 import com.blog.ljtatum.androidx.service.iPhoneNotchService;
 import com.blog.ljtatum.androidx.utils.DialogUtils;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -136,13 +137,41 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
     private void initializeHandlers() {
         tvEnableAndroidx.setOnClickListener(this);
         ivEnableAndroidxInfo.setOnClickListener(this);
+        ivHambugerMenu.setOnClickListener(this);
     }
 
     /**
      * Method is used to initialize listeners and callbacks
      */
     private void initializeListeners() {
-        ivHambugerMenu.setOnClickListener(this);
+        // adView listener
+        adView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                // do nothing
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                // code to be executed when an ad request fails
+                adView.setBackgroundResource(R.drawable.banner);
+            }
+
+            @Override
+            public void onAdOpened() {
+                // do nothing
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                // do nothing
+            }
+
+            @Override
+            public void onAdClosed() {
+                // do nothing
+            }
+        });
     }
 
     @SuppressLint("NewApi")
@@ -272,10 +301,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
         if (!FrameworkUtils.checkIfNull(mPhoneNotchView)) {
             mPhoneNotchView.destroy();
             mPhoneNotchView = null;
-
-            // invoke garbage collector
-            System.gc();
         }
+        // invoke garbage collector
+        System.gc();
     }
 
     @Override
