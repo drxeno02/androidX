@@ -10,9 +10,7 @@ few of the applications we have created.
 
 1. [Tip Calculator](https://play.google.com/store/apps/details?id=com.blog.ljtatum.tipcalculator)
 2. [Kids Education: Elements](https://play.google.com/store/apps/details?id=com.blog.ljtatum.elements)
-3. [Kids Education: Eek! Math](https://play.google.com/store/ap
-
-ps/details?id=com.blog.ljtatum.eekmathi)
+3. [Kids Education: Eek! Math](https://play.google.com/store/apps/details?id=com.blog.ljtatum.eekmathi)
 4. [Kids Education: Eek! Spelling](https://play.google.com/store/apps/details?id=com.blog.ljtatum.eekspellingi)
 5. [AndroidX](https://play.google.com/store/apps/details?id=com.blog.ljtatum.androidx)
 
@@ -47,14 +45,14 @@ individuals by just downloading, sharing the app and giving it a 5 star rating!
 <a name="screenshots"></a>
 ## Screenshots
 
-![](https://github.com/drxeno02/tools-tip-calculator/blob/master/app/screenshots/screenshot.webp)
+![](https://github.com/drxeno02/iPhoneNotchForAndroid/blob/master/app/screenshots/screenshot.webp)
 
 <a name="documentation"></a>
 ## Documentation
 
 The codebase for all projects created in the mentoring program is open and available for you to see.
 Hopefully, there are some things you can learn no matter what development level you are at. 
-[Click here to see code documentation](https://github.com/drxeno02/tools-tip-calculator/tree/master/app/docs)
+[Click here to see code documentation](https://github.com/drxeno02/iPhoneNotchForAndroid/tree/master/app/docs)
 
 <a name="social-media"></a>
 ## Social Media
