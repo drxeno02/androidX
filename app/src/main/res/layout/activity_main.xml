@@ -17,7 +17,7 @@
         android:layout_height="wrap_content">
 
         <!-- content description -->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="@dimen/scaling_220"
             android:layout_margin="@dimen/scaling_26"
@@ -43,10 +43,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/scaling_10"
                     android:layout_marginStart="@dimen/scaling_10"
                     android:layout_toEndOf="@+id/iv_iphonex"
-                    android:layout_toRightOf="@+id/iv_iphonex"
                     android:gravity="center_vertical"
                     android:padding="@dimen/scaling_4"
                     android:text="@string/main_desc"
@@ -54,7 +52,8 @@
                     android:textSize="@dimen/font_size_16" />
 
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 
@@ -69,7 +68,6 @@
             android:id="@+id/tv_enable_androidx"
             android:layout_width="@dimen/scaling_280"
             android:layout_height="@dimen/scaling_60"
-            android:layout_marginLeft="@dimen/scaling_30"
             android:layout_marginStart="@dimen/scaling_30"
             android:background="@drawable/bg_blue_rad50"
             android:gravity="center"
@@ -83,10 +81,8 @@
             android:layout_width="@dimen/scaling_40"
             android:layout_height="@dimen/scaling_40"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@+id/tv_enable_androidx"
-            android:layout_toRightOf="@+id/tv_enable_androidx"
             android:src="@drawable/question_mark_a"
             tools:ignore="ContentDescription" />
 
@@ -98,10 +94,8 @@
         android:layout_width="@dimen/scaling_45"
         android:layout_height="@dimen/scaling_45"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="@dimen/scaling_10"
-        android:layout_marginRight="@dimen/scaling_10"
         android:layout_marginTop="@dimen/scaling_20"
+        android:layout_marginEnd="@dimen/scaling_10"
         android:scaleType="fitXY"
         android:src="@drawable/hamburger_icon"
         tools:ignore="ContentDescription" />
@@ -109,12 +103,12 @@
     <!-- ad banner -->
     <com.google.android.gms.ads.AdView
         android:id="@+id/ad_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-8397256122648968/8223227383" />
+        ads:adUnitId="@string/ad_banner_id_app" />
 
 </RelativeLayout>

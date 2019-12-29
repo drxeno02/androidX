@@ -2,13 +2,12 @@ package com.blog.ljtatum.androidx.fragments;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,14 +29,15 @@ import de.keyboardsurfer.android.widget.crouton.Style;
 /**
  * Created by LJTat on 2/27/2017.
  */
-
 public class SettingsFragment extends BaseFragment implements View.OnClickListener {
     private static final String TAG = SettingsFragment.class.getSimpleName();
 
+    // package
     private static final String PACKAGE = "package:";
-    private static final int PERMISSION_REQUEST_CODE_DRAW_OVER_APP = 100; // permissions
+    // permission code
+    private static final int PERMISSION_REQUEST_CODE_DRAW_OVER_APP = 100;
 
-    private Context mContext;
+    // views
     private View mRootView;
     private TextView tvFragmentHeader, tvPowerSaving, tvDrawOverApp;
     private ImageView ivPowerSaving, ivDrawOverApp;
@@ -61,7 +61,6 @@ public class SettingsFragment extends BaseFragment implements View.OnClickListen
      * Method is used to instantiate views
      */
     private void initializeViews() {
-        mContext = getActivity();
         mSharedPref = new SharedPref(mContext, com.app.framework.constants.Constants.PREF_FILE_NAME);
 
         // instantiate views

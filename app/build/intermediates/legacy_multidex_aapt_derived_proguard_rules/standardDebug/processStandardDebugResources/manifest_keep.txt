@@ -1,0 +1,4 @@
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardDebug\AndroidManifest.xml:34
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardDebug\AndroidManifest.xml:34
+-keep class com.blog.ljtatum.androidx.application.AndroidXApplication { <init>(); }

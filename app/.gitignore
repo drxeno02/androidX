@@ -16,9 +16,9 @@ bin/
 gen/
 
 # Gradle files
-.gradle/
-build/
-/*/build/
+#.gradle/
+#build/
+#/*/build/
 
 # Windows thumbnail db
 Thumbs.db

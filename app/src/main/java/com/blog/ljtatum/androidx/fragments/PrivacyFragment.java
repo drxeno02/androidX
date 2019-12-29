@@ -1,8 +1,7 @@
 package com.blog.ljtatum.androidx.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,6 @@ import com.blog.ljtatum.androidx.activity.MainActivity;
  */
 public class PrivacyFragment extends BaseFragment implements View.OnClickListener {
 
-    private Context mContext;
     private View mRootView;
     private TextView tvFragmentHeader;
 
@@ -37,7 +35,6 @@ public class PrivacyFragment extends BaseFragment implements View.OnClickListene
      * Method is used to instantiate views
      */
     private void initializeViews() {
-        mContext = getActivity();
         tvFragmentHeader = mRootView.findViewById(R.id.tv_fragment_header);
 
         // set fragment header

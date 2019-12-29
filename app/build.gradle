@@ -1,0 +1,92 @@
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.31.2'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+ext {
+    developerId = 'drxeno02'
+    developerName = 'Leonard Tatum'
+    developerEmail = 'ljtatum@hotmail.com'
+
+    siteUrl = 'https://github.com/drxeno02/iPhoneNotchForAndroid'
+    gitUrl = 'https://github.com/drxeno02/iPhoneNotchForAndroid.git'
+}
+
+android {
+    compileSdkVersion 29
+
+    // construct version name
+    def versionMajor = 1
+    def versionMinor = 0
+    def versionPatch = 5
+    def code = 6;
+
+    defaultConfig {
+        applicationId "com.blog.ljtatum.androidx"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode code
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // enabling multidex support
+        multiDexEnabled true
+        //noinspection GroovyAssignabilityCheck
+        signingConfig signingConfigs.debug
+    }
+    // specifies a flavor dimension
+    flavorDimensions "app"
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            buildConfigField "String", "ENVIRONMENT", "\"test\""
+            buildConfigField "boolean", "DEBUG_MODE", "true"
+            manifestPlaceholders = [build_version: "${versionMajor}.${versionMinor}.${versionPatch}"]
+
+            // debuggable
+            debuggable true
+        }
+        release {
+            buildConfigField "String", "ENVIRONMENT", "\"production\""
+            buildConfigField "boolean", "DEBUG_MODE", "false"
+            manifestPlaceholders = [build_version: "${versionMajor}.${versionMinor}.${versionPatch}"]
+
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+    // flavor implementation propelled by request for multiple environments on Crashlytics
+    productFlavors {
+        standard {
+            applicationId 'com.blog.ljtatum.androidx'
+            dimension "app"
+        }
+    }
+    lintOptions {
+        // if true, stop the gradle build if errors are found
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    api project(path: ':ApplicationFramework')
+    api('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+        transitive = true;
+    }
+}

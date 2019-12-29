@@ -15,7 +15,6 @@ import com.blog.ljtatum.androidx.R;
 /**
  * Created by LJTat on 11/4/2017.
  */
-
 public class iPhoneNotch extends View {
 
     private final Context mContext;
@@ -23,6 +22,11 @@ public class iPhoneNotch extends View {
     private WindowManager mWindowManager;
     private LayoutInflater mRootView;
 
+    /**
+     * Constructor
+     *
+     * @param context Interface to global information about an application environment
+     */
     public iPhoneNotch(Context context) {
         super(context);
         // instantiate context and views
@@ -72,12 +76,16 @@ public class iPhoneNotch extends View {
 
         // return the handle to a system-level service by name
         mWindowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
-        // adding views to window manager will display (draw) the view over any thing
-        mWindowManager.addView(mFrameLayout, params);
-
         mRootView = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        // inflate a new view hierarchy from the specified xml resource
-        mRootView.inflate(R.layout.item_iphone_notch, mFrameLayout);
+
+        try {
+            // adding views to window manager will display (draw) the view over any thing
+            mWindowManager.addView(mFrameLayout, params);
+            // inflate a new view hierarchy from the specified xml resource
+            mRootView.inflate(R.layout.item_iphone_notch, mFrameLayout);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

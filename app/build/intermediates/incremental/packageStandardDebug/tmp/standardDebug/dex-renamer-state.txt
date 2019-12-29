@@ -1,0 +1,13 @@
+#Sun Dec 29 13:52:26 PST 2019
+path.3=classes_0.dex
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=C\:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\app\\build\\intermediates\\dex\\standardDebug\\mergeLibDexStandardDebug\\out\\classes_0.dex
+base.2=C\:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\app\\build\\intermediates\\dex\\standardDebug\\mergeExtDexStandardDebug\\out\\classes2.dex
+base.1=C\:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\app\\build\\intermediates\\dex\\standardDebug\\mergeProjectDexStandardDebug\\out\\classes.dex
+base.0=C\:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\app\\build\\intermediates\\dex\\standardDebug\\mergeExtDexStandardDebug\\out\\classes.dex

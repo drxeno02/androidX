@@ -12,7 +12,6 @@ import com.blog.ljtatum.androidx.constants.Constants;
  * Verbose should never be compiled into an application except during development. Debug logs
  * are compiled in but stripped at runtime. Error, warning and info logs are always kept</p>
  */
-
 public class Logger {
     /**
      * Helper method for logging e-verbose

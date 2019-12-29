@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\app\\build\\intermediates\\incremental\\mergeStandardDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\AndroidStudio\\Workspace\\iPhoneNotchForAndroid\\ApplicationFramework\\build\\intermediates\\packaged_res\\debug\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "196"
+                    }
+                }
+            ]
+        }
+    ]
+}

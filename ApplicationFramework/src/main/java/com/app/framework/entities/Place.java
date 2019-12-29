@@ -2,7 +2,7 @@ package com.app.framework.entities;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class Place implements Parcelable {
 

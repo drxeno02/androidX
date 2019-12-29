@@ -46,7 +46,6 @@
                 android:id="@+id/tv_power_saving"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:text="@string/settings_power_saving"
                 android:textColor="@color/black"
@@ -57,10 +56,8 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@+id/tv_power_saving"
-                android:layout_toRightOf="@+id/tv_power_saving"
                 android:src="@drawable/question_mark_a"
                 tools:ignore="ContentDescription" />
 
@@ -71,12 +68,11 @@
             android:id="@+id/switch_power_saving"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|right"
-            android:layout_marginLeft="5dp"
+            android:layout_gravity="end"
             android:layout_marginStart="5dp"
             android:layout_weight="0.15"
             android:checked="true"
-            android:gravity="end|right" />
+            android:gravity="end" />
 
     </LinearLayout>
 
@@ -101,7 +97,6 @@
                 android:id="@+id/tv_draw_over_app"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:text="@string/settings_draw_over_app"
                 android:textColor="@color/black"
@@ -112,10 +107,8 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@+id/tv_draw_over_app"
-                android:layout_toRightOf="@+id/tv_draw_over_app"
                 android:src="@drawable/question_mark_a"
                 tools:ignore="ContentDescription" />
 
@@ -126,12 +119,11 @@
             android:id="@+id/switch_draw_over_app"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|right"
-            android:layout_marginLeft="5dp"
+            android:layout_gravity="end"
             android:layout_marginStart="5dp"
             android:layout_weight="0.15"
             android:checked="true"
-            android:gravity="end|right" />
+            android:gravity="end" />
 
     </LinearLayout>
 

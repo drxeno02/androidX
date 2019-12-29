@@ -1,7 +1,10 @@
 package com.blog.ljtatum.androidx.fragments;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import android.app.Activity;
+import android.content.Context;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.app.framework.utilities.FrameworkUtils;
 import com.blog.ljtatum.androidx.R;
@@ -11,10 +14,11 @@ import com.blog.ljtatum.androidx.listeners.OnFragmentRemoved;
 /**
  * Created by LJTat on 3/3/2017.
  */
-
 public class BaseFragment extends Fragment {
 
-    protected static OnFragmentRemoved mOnFragmentRemovedListener;
+    static OnFragmentRemoved mOnFragmentRemovedListener;
+    Activity mActivity;
+    Context mContext;
 
     /**
      * Method is used to set callback for when fragment(s) are removed
@@ -50,5 +54,27 @@ public class BaseFragment extends Fragment {
             ft.setCustomAnimations(R.anim.ui_slide_in_from_bottom_frag, R.anim.ui_slide_out_to_bottom_frag);
             ft.remove(this).commitAllowingStateLoss();
         }
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        mContext = context;
+
+        if (context instanceof Activity) {
+            mActivity = (Activity) mContext;
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        mContext = null;
+        mActivity = null;
+
+        if (!FrameworkUtils.checkIfNull(mOnFragmentRemovedListener)) {
+            mOnFragmentRemovedListener.onFragmentRemoved();
+            mOnFragmentRemovedListener = null;
+        }
+        super.onDetach();
     }
 }
