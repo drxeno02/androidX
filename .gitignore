@@ -8,18 +8,13 @@
 # files for the dex VM
 *.dex
 
-# Java class files
-*.class
-
 # general folders
 bin/
 gen/
 
 # Gradle files
 .gradle/
-build/
-/*/build/
-*.gradle
+/build/
 
 # Windows thumbnail db
 Thumbs.db
@@ -29,8 +24,6 @@ Thumbs.db
 **/.DS_Store
 
 # Android Studio
-zTrip.iml
-*/zTrip.iml
 .idea/
 *.iml
 

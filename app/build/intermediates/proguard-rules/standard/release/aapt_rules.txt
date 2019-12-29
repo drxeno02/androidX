@@ -1,0 +1,150 @@
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:34
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:45
+-keep class com.blog.ljtatum.androidx.activity.MainActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:34
+-keep class com.blog.ljtatum.androidx.application.AndroidXApplication { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:56
+-keep class com.blog.ljtatum.androidx.service.iPhoneNotchService { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:80
+-keep class com.facebook.CustomTabMainActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:76
+-keep class com.facebook.FacebookActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:170
+-keep class com.facebook.internal.FacebookInitProvider { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:59
+-keep class com.google.android.gms.ads.AdActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:156
+-keep class com.google.android.gms.ads.MobileAdsInitProvider { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:120
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:136
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:150
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:131
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:146
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:103
+-keep class com.google.firebase.auth.internal.FederatedSignInActivity { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:82
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:111
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\build\intermediates\merged_manifests\standardRelease\AndroidManifest.xml:125
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_title_material.xml:56
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_popup_menu_item_layout.xml:17
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_cascading_menu_item_layout.xml:20
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:43
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_action_mode_bar.xml:19
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\0d6479367942c34eca1dffbf2cf7b343\jetified-facebook-common-4.31.0\res\layout\com_facebook_smart_device_dialog_fragment.xml:47
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\0d6479367942c34eca1dffbf2cf7b343\jetified-facebook-common-4.31.0\res\layout\com_facebook_device_auth_dialog_fragment.xml:45
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_simple.xml:17
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_dialog_title_material.xml:22
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:36
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_screen_simple.xml:25
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\b6af4929e5c18857e99f1008808e49d4\browser-1.0.0\res\layout\browser_actions_context_menu_page.xml:5
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\0d6479367942c34eca1dffbf2cf7b343\jetified-facebook-common-4.31.0\res\layout\com_facebook_smart_device_dialog_fragment.xml:22
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\0d6479367942c34eca1dffbf2cf7b343\jetified-facebook-common-4.31.0\res\layout\com_facebook_device_auth_dialog_fragment.xml:22
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\src\main\res\layout\activity_main.xml:20
+-keep class androidx.cardview.widget.CardView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_bottom_sheet_dialog.xml:26
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\af6216f809fc2c81277e34b3aa69a10e\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\src\main\res\layout\drawer_container.xml:2
+-keep class androidx.drawerlayout.widget.DrawerLayout { <init>(...); }
+
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\src\main\res\layout\drawer.xml:31
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
+
+# Referenced at C:\AndroidStudio\Workspace\iPhoneNotchForAndroid\app\src\main\res\layout\activity_main.xml:104
+-keep class com.google.android.gms.ads.AdView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_bottom_navigation_item.xml:27
+-keep class com.google.android.material.internal.BaselineLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_text_input_password_icon.xml:18
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_navigation_item.xml:17
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_navigation_menu.xml:17
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\mtrl_layout_snackbar.xml:18
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_layout_snackbar.xml:18
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\mtrl_layout_snackbar_include.xml:18
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\3f2791d3ecf41ed9e54a91eddcfa2ad3\material-1.0.0\res\layout\design_layout_snackbar_include.xml:18
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
+
+# Referenced at C:\Users\Tatum\.gradle\caches\transforms-2\files-2.1\13c0c2eeb7815701dd8806d1a7608fd1\jetified-android-maps-utils-0.5\res\layout\amu_text_bubble.xml:7
+-keep class com.google.maps.android.ui.RotationLayout { <init>(...); }
+
