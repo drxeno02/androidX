@@ -4,9 +4,16 @@
 # built application files
 *.apk
 *.ap_
+.externalNativeBuild
+.DS_Store
 
 # files for the dex VM
 *.dex
+
+# idea files
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
 
 # general folders
 bin/
@@ -16,7 +23,7 @@ gen/
 .gradle/
 /build/
 /*/build/
-*.gradl
+*.gradle
 
 # Windows thumbnail db
 Thumbs.db
@@ -24,10 +31,17 @@ Thumbs.db
 # OSX files
 .DS_Store
 **/.DS_Store
+/captures
+
+# Android Studio
+.idea/
+*.iml
 
 # Properties
 .apt_generated/
 project.properties
+version.properties
+*/version.properties
 
 # Local configuration file (sdk path, etc)
 local.properties

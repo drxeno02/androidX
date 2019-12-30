@@ -4,9 +4,16 @@
 # built application files
 *.apk
 *.ap_
+.externalNativeBuild
+.DS_Store
 
 # files for the dex VM
 *.dex
+
+# idea files
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
 
 # general folders
 bin/
@@ -24,6 +31,7 @@ Thumbs.db
 # OSX files
 .DS_Store
 **/.DS_Store
+/captures
 
 # Android Studio
 .idea/
