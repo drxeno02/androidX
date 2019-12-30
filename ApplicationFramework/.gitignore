@@ -8,17 +8,15 @@
 # files for the dex VM
 *.dex
 
-# Java class files
-*.class
-
 # general folders
 bin/
 gen/
 
 # Gradle files
 .gradle/
-build/
+/build/
 /*/build/
+*.gradl
 
 # Windows thumbnail db
 Thumbs.db
@@ -26,12 +24,6 @@ Thumbs.db
 # OSX files
 .DS_Store
 **/.DS_Store
-
-# Android Studio
-genetech.iml
-*/genetech.iml
-.idea/
-*.iml
 
 # Properties
 .apt_generated/

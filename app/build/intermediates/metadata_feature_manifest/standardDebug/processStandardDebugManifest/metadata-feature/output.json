@@ -1,1 +1,1 @@
-[{"outputType":{"type":"METADATA_FEATURE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":6,"versionName":"1.0.5","enabled":true,"outputFile":"app-standard-debug.apk","fullName":"standardDebug","baseName":"standard-debug"},"path":"AndroidManifest.xml","properties":{}}]
+[{"outputType":{"type":"METADATA_FEATURE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":7,"versionName":"1.0.6","enabled":true,"outputFile":"app-standard-debug.apk","fullName":"standardDebug","baseName":"standard-debug"},"path":"AndroidManifest.xml","properties":{}}]
